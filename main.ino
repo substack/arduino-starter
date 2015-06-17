@@ -1,5 +1,3 @@
-#include <Arduino.h>
-
 // blink pin 13
 
 void setup() {                
