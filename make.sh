@@ -25,7 +25,7 @@ CORE_SOURCES=`echo $ARDUINO_PATH/{main.cpp,wiring*.c,WInterrupts.c,\
 {WMath,WString,Print,HardwareSerial,IPAddress}.cpp}`
 
 avr-c++ -o $ROOT/build/main.elf -x c++ \
-  $ROOT/main.c \
+  $ROOT/main.ino \
   <(echo 'extern "C" void __cxa_pure_virtual() { while(1); }') \
   $CORE_SOURCES \
   -D F_CPU=$F_CPU -D ARDUINO=110 -mmcu=$MCU \
