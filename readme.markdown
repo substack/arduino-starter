@@ -12,7 +12,7 @@ sudo apt-get install arduino-mk
 
 # flash and run
 
-To flash the connected arduino with the program in `main.c`, do:
+To flash the connected arduino with the program in `main.ino`, do:
 
 ```
 $ ./make.sh
