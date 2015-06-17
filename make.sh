@@ -30,6 +30,12 @@ avr-c++ -o $ROOT/build/main.elf -x c++ \
   $CORE_SOURCES \
   -D F_CPU=$F_CPU -D ARDUINO=110 -mmcu=$MCU \
   -I $ARDUINO_PATH -I $VARIANTS_PATH \
+  $(for x in $PWD/vendor/*; do
+    if test -d $x; then
+      echo -I $x
+      echo $x/*.cpp
+    fi
+  done) \
   `find $ARDUINO_ROOT/libraries -type d | sed 's/^/-I /'` \
   -ffunction-sections -fdata-sections -w \
 && avr-objcopy -O ihex -R .eeprom $ROOT/build/main.elf $ROOT/build/main.hex \

@@ -17,3 +17,12 @@ To flash the connected arduino with the program in `main.c`, do:
 ```
 $ ./make.sh
 ```
+
+# vendor packages
+
+Put vendor packages in `./vendor`. For example:
+
+```
+$ mkdir -p vendor/shield
+$ git clone git@github.com:adafruit/Adafruit-Motor-Shield-library.git vendor/shield
+```
