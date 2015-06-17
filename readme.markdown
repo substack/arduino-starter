@@ -7,7 +7,7 @@ basic command-line script to compile and flash arduinos
 First install arduino-mk
 
 ```
-sudo apt-get install arduino-mk
+sudo apt-get install arduino python-pip gcc-avr avr-libc binutils-avr avrdude
 ```
 
 # flash and run
