@@ -4,14 +4,21 @@ basic command-line script to compile and flash arduinos
 
 # install
 
-First install the arduino and avr toolchains:
+First install the arduino and avr toolchains.
+
+Linux:
 
 ```
-sudo apt-get install arduino python-pip gcc-avr avr-libc binutils-avr avrdude
+$ sudo apt-get install arduino python-pip gcc-avr avr-libc binutils-avr avrdude
 ```
 
-Mac users! If you figure out what the `brew` equivalents for the apt-gets above
-are, please share!
+Mac:
+
+```
+$ brew install caskroom/cask/brew-cask python
+$ brew cask install arduino crosspack-avr
+
+```
 
 # flash and run
 
