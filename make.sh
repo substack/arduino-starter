@@ -3,7 +3,7 @@
 # stats for the uno from http://arduino.cc/en/uploads/Main/boards.txt
 MCU=atmega328p
 F_CPU=16000000
-BAUD=57600
+BAUD=115200
 
 if test -n "$1"; then
   PORT=$1
